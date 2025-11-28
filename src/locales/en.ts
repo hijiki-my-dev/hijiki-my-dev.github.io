@@ -1,6 +1,6 @@
 export const en = {
   nav: {
-    about: 'Profile',
+    about: 'Career',
     projects: 'Projects',
     skills: 'Skills',
     contact: 'Contact',
@@ -9,14 +9,18 @@ export const en = {
     greeting: '',
     name: 'Portfolio of Hijiki',
     role: '',
-    description: 'Hijiki: Blog Operator / Engineer',
+    description: 'Creating with Code, Connecting with Words',
     viewWork: 'View My Work',
     contactMe: 'Contact Me',
   },
-  about: {
+  career: {
+    title: 'Career',
+    description1: 'I started my journey as a self-taught developer and have since worked on various projects ranging from small business websites to complex web applications.',
+    description2: 'Currently, I focus on building scalable solutions and sharing my knowledge through technical blogging.',
+  },
+  profile: {
     title: 'Profile',
-    description1: 'I am a dedicated software engineer with a passion for creating intuitive and dynamic user experiences. With a strong foundation in modern web technologies, I love solving complex problems and turning ideas into reality.',
-    description2: "When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.",
+    description: "Hi! I'm Hijiki. Besides coding, I love traveling, photography, and finding the best coffee spots in town. I believe in maintaining a healthy work-life balance to stay creative and motivated.",
   },
   projects: {
     title: 'Projects',

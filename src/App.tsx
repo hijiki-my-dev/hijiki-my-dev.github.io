@@ -7,6 +7,8 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import SocialLinks from './components/SocialLinks';
 
+import CasualProfile from './components/CasualProfile';
+
 function App() {
     return (
         <ThemeProvider>
@@ -18,6 +20,7 @@ function App() {
                         <About />
                         <Projects />
                         <Skills />
+                        <CasualProfile />
                         <SocialLinks />
                     </main>
                 </div>

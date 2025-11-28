@@ -18,7 +18,6 @@ const Navigation = () => {
     }, []);
 
     const navLinks = [
-        { name: t('nav.about'), href: '#about' },
         { name: t('nav.projects'), href: '#projects' },
         { name: t('nav.skills'), href: '#skills' },
         { name: t('nav.contact'), href: '#contact' },
