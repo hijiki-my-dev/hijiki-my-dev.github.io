@@ -1,14 +1,13 @@
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Twitter, BookOpen } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const SocialLinks = () => {
     const { t } = useLanguage();
 
     const socialLinks = [
-        { name: 'GitHub', icon: <Github size={24} />, href: 'https://github.com', color: 'hover:text-gray-600 dark:hover:text-gray-400' },
-        { name: 'Twitter', icon: <Twitter size={24} />, href: 'https://twitter.com', color: 'hover:text-blue-500 dark:hover:text-blue-400' },
-        { name: 'LinkedIn', icon: <Linkedin size={24} />, href: 'https://linkedin.com', color: 'hover:text-blue-700 dark:hover:text-blue-600' },
-        { name: 'Email', icon: <Mail size={24} />, href: 'mailto:example@example.com', color: 'hover:text-red-500 dark:hover:text-red-400' },
+        { name: 'GitHub', icon: <Github size={24} />, href: 'https://github.com/hijiki-my-dev', color: 'hover:text-gray-600 dark:hover:text-gray-400' },
+        { name: 'X', icon: <Twitter size={24} />, href: 'https://x.com/in_hijiki_blog', color: 'hover:text-blue-500 dark:hover:text-blue-400' },
+        { name: 'Tech Blog', icon: <BookOpen size={24} />, href: 'https://www.hijiki-blog.org/tech/', color: 'hover:text-green-600 dark:hover:text-green-500' },
     ];
 
     return (

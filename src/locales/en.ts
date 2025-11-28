@@ -1,25 +1,25 @@
 export const en = {
   nav: {
-    about: 'About',
+    about: 'Profile',
     projects: 'Projects',
     skills: 'Skills',
     contact: 'Contact',
   },
   hero: {
-    greeting: "Hi, I'm",
-    name: 'Your Name',
+    greeting: '',
+    name: 'Portfolio of Hijiki',
     role: '',
-    description: 'A passionate developer building beautiful and functional web experiences.',
+    description: 'Hijiki: Blog Operator / Engineer',
     viewWork: 'View My Work',
     contactMe: 'Contact Me',
   },
   about: {
-    title: 'About Me',
+    title: 'Profile',
     description1: 'I am a dedicated software engineer with a passion for creating intuitive and dynamic user experiences. With a strong foundation in modern web technologies, I love solving complex problems and turning ideas into reality.',
     description2: "When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.",
   },
   projects: {
-    title: 'My Projects',
+    title: 'Projects',
     viewDemo: 'View Demo',
     viewCode: 'View Code',
     items: [
@@ -38,7 +38,7 @@ export const en = {
     ]
   },
   skills: {
-    title: 'Technical Skills',
+    title: 'Skills',
     categories: {
       frontend: 'Frontend',
       backend: 'Backend',
@@ -48,6 +48,6 @@ export const en = {
   contact: {
     title: "Let's Connect",
     description: "I'm currently open to new opportunities and collaborations. Feel free to reach out if you want to chat about code, design, or just say hi!",
-    footer: '© {year} Your Name. All rights reserved.',
+    footer: '© {year} Hijiki. All rights reserved.',
   }
 };

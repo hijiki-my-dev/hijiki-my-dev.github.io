@@ -12,19 +12,11 @@ const Hero = () => {
 
             <div className="section-container text-center z-10">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in text-gray-900 dark:text-white">
-                    {t('hero.greeting')} <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">{t('hero.name')}</span>{t('hero.role')}
+                    <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">{t('hero.name')}</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
+                <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-0 max-w-2xl mx-auto animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
                     {t('hero.description')}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
-                    <a href="#projects" className="btn-primary">
-                        {t('hero.viewWork')}
-                    </a>
-                    <a href="#contact" className="btn-outline">
-                        {t('hero.contactMe')}
-                    </a>
-                </div>
             </div>
 
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
