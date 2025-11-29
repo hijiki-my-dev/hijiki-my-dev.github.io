@@ -9,8 +9,8 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#9333ea', // purple-600
-          hover: '#7e22ce',   // purple-700
+          DEFAULT: '#10b981', // emerald-500
+          hover: '#059669',   // emerald-600
         },
         secondary: {
           DEFAULT: '#3b82f6', // blue-500
