@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, Languages } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
+import logo from '../assets/portfolio_logo.svg';
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,11 @@ const Navigation = () => {
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-light/80 dark:bg-dark/80 backdrop-blur-md py-4 shadow-sm dark:shadow-none' : 'bg-transparent py-6'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
-                    <a href="#" className="text-2xl font-heading font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                        Portfolio
+                    <a href="#" className="flex items-center gap-3 group">
+                        <img src={logo} alt="Hijiki Logo" className="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
+                        <span className="text-3xl font-script font-bold text-gray-800 dark:text-white transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-0.5">
+                            Hijiki
+                        </span>
                     </a>
 
                     {/* Desktop Menu */}
