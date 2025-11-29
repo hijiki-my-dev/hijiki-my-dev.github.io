@@ -5,8 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import SocialLinks from './components/SocialLinks';
-
+import Footer from './components/Footer';
 import CasualProfile from './components/CasualProfile';
 
 function App() {
@@ -17,12 +16,12 @@ function App() {
                     <Navigation />
                     <main>
                         <Hero />
+                        <CasualProfile />
                         <About />
                         <Projects />
                         <Skills />
-                        <CasualProfile />
-                        <SocialLinks />
                     </main>
+                    <Footer />
                 </div>
             </LanguageProvider>
         </ThemeProvider>
