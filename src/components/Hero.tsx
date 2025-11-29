@@ -14,7 +14,7 @@ const Hero = () => {
                 <h1 className="text-5xl md:text-7xl font-bold mb-10 animate-fade-in text-gray-900 dark:text-white">
                     <span className="inline-block pb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{t('hero.name')}</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-0 max-w-2xl mx-auto animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
+                <p className="text-[20px] text-gray-600 dark:text-gray-400 mb-0 max-w-2xl mx-auto animate-slide-up opacity-0 whitespace-pre-wrap" style={{ animationDelay: '0.2s' }}>
                     {t('hero.description')}
                 </p>
             </div>

@@ -9,7 +9,7 @@ export const ja = {
     greeting: '',
     name: 'Portfolio of Hijiki',
     role: '',
-    description: 'コードで創り、言葉で届ける。',
+    description: 'ひじきと申します。\n現在は大学院に通いながら、\nコード書いたりブログ運営したりの日々を送っています',
     viewWork: '作品を見る',
     contactMe: '連絡する',
   },
