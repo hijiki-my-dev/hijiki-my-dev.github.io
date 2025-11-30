@@ -19,7 +19,7 @@ const Skills = () => {
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {categoryOrder.map((key) => (
-                        <div key={key} className="glass-panel shadow-none p-6 border-primary/50 transition-colors duration-300">
+                        <div key={key} className="bg-white dark:bg-white/5 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-white/10 transition-colors duration-300">
                             <h3 className="text-xl font-bold mb-6 text-center border-b border-gray-200 dark:border-white/10 pb-4 text-gray-900 dark:text-white">
                                 {categories[key]}
                             </h3>
