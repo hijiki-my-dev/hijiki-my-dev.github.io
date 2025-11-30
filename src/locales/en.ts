@@ -9,7 +9,7 @@ export const en = {
     greeting: '',
     name: 'Portfolio of Hijiki',
     role: '',
-    description: 'Creating with Code, Connecting with Words',
+    description: "I'm Hijiki.\nCurrently attending graduate school, I spend my days writing code and running my blog.",
     viewWork: 'View My Work',
     contactMe: 'Contact Me',
   },
@@ -52,6 +52,15 @@ export const en = {
   profile: {
     title: 'Profile',
     description: "Hi! I'm Hijiki. Born in 2002, from Tokyo.\nI became interested in IT during high school and started aiming to become a software engineer after participating in a long-term internship! I plan to start working as a SWE in 2027.\nMy most used language is Python, but I also want to be able to do Web frontend with JavaScript (TypeScript).\n\nI've been running a blog writing light novel reviews since my first year of university. My favorite series are Sword Art Online and Rascal Does Not Dream series (the image is Enoshima seen from Shichirigahama, Kanagawa, the holy land of the series)!\n\nThis portfolio site was created by Antigravity. I think every day that I want to be on the side of using AI well.",
+    links: {
+      x: 'Light novels, anime, and IT-related topics',
+      blog: 'Light novel reviews and more',
+      blogTech: 'IT, career, and blog operation',
+      github: 'Projects created and things learned',
+      kaggle: 'Participated in tabular data competitions a few times',
+      note: 'Used to use this',
+      blogMap: 'Registered on a service to find blogs'
+    }
   },
   projects: {
     title: 'Projects',

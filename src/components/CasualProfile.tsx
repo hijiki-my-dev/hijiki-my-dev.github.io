@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Map, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
-import xLogo from '../assets/x_logo.png';
+import xLogo from '../assets/x_logo.jpg';
 import hijikiBlogLogo from '../assets/hijiki_blog_logo.png';
 import hijikiBlogTechLogo from '../assets/hijiki_blog_tech_logo.jpeg';
-import kaggleLogo from '../assets/kaggle_logo.svg';
-import noteLogo from '../assets/note_logo.svg';
+import kaggleLogo from '../assets/kaggle_logo.jpeg';
+import noteLogo from '../assets/note_logo.jpeg';
 
 import profileImage from '../assets/profile.jpg';
 
@@ -17,28 +17,28 @@ const CasualProfile = () => {
         {
             name: 'X (Twitter)',
             url: 'https://x.com/in_hijiki_blog',
-            desc: 'ラノベやアニメ、IT関係のこと',
+            desc: t('profile.links.x'),
             image: xLogo,
             isImage: true
         },
         {
             name: 'ひじきブログ',
             url: 'https://www.hijiki-blog.org/',
-            desc: 'ライトノベルの感想記事など',
+            desc: t('profile.links.blog'),
             image: hijikiBlogLogo,
             isImage: true
         },
         {
             name: 'ひじきブログ-TECH',
             url: 'https://www.hijiki-blog.org/tech/',
-            desc: 'IT・キャリア・ブログ運営など',
+            desc: t('profile.links.blogTech'),
             image: hijikiBlogTechLogo,
             isImage: true
         },
         {
             name: 'GitHub',
             url: 'https://github.com/hijiki-my-dev',
-            desc: '作ったものや勉強したことなど',
+            desc: t('profile.links.github'),
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
             ),
@@ -47,21 +47,21 @@ const CasualProfile = () => {
         {
             name: 'Kaggle',
             url: 'https://www.kaggle.com/hijikiml',
-            desc: 'テーブルデータのコンペに何回か参加',
+            desc: t('profile.links.kaggle'),
             image: kaggleLogo,
             isImage: true
         },
         {
             name: 'note',
             url: 'https://note.com/hijiki_blog',
-            desc: '昔使ってました',
+            desc: t('profile.links.note'),
             image: noteLogo,
             isImage: true
         },
         {
             name: 'Blog Map',
             url: 'https://blogmap.jp/details/2307',
-            desc: 'ブログを見つけられるサービスに登録してます',
+            desc: t('profile.links.blogMap'),
             icon: <Map size={24} />,
             isImage: false
         }
