@@ -7,6 +7,8 @@ import hijikiBlogTechLogo from '../assets/hijiki_blog_tech_logo.jpeg';
 import kaggleLogo from '../assets/kaggle_logo.svg';
 import noteLogo from '../assets/note_logo.svg';
 
+import profileImage from '../assets/profile.jpg';
+
 const CasualProfile = () => {
     const { t } = useLanguage();
     const [showMore, setShowMore] = useState(false);
@@ -72,10 +74,19 @@ const CasualProfile = () => {
                     {t('profile.title')}
                 </h2>
 
-                <div className="max-w-4xl mx-auto text-center">
-                    <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 leading-relaxed">
-                        {t('profile.description')}
-                    </p>
+                <div className="max-w-4xl mx-auto">
+                    <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-8 mb-12">
+                        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed whitespace-pre-line text-left flex-1">
+                            {t('profile.description')}
+                        </p>
+                        <div className="flex-shrink-0">
+                            <img
+                                src={profileImage}
+                                alt="Profile"
+                                className="w-32 h-32 lg:w-48 lg:h-48 rounded-2xl object-cover shadow-lg"
+                            />
+                        </div>
+                    </div>
 
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                         {/* Primary Links (Always visible) */}
