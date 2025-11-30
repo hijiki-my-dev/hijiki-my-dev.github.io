@@ -99,7 +99,7 @@ const CasualProfile = () => {
                                         href={link.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="hidden lg:flex flex-col md:flex-row items-center md:items-start p-4 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl hover:border-primary/50 hover:shadow-md transition-all group text-center md:text-left h-full"
+                                        className="hidden lg:flex flex-col md:flex-row items-center md:items-start p-4 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl hover:border-primary/50 shadow-md hover:shadow-lg transition-all group text-center md:text-left h-full"
                                     >
                                         <div className="flex-shrink-0 p-2 bg-gray-50 dark:bg-white/5 rounded-lg group-hover:scale-110 transition-transform w-12 h-12 flex items-center justify-center overflow-hidden mb-3 md:mb-0 md:mr-4">
                                             {link.isImage ? (
@@ -127,7 +127,7 @@ const CasualProfile = () => {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={`flex flex-col md:flex-row items-center md:items-start p-4 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl hover:border-primary/50 hover:shadow-md transition-all group text-center md:text-left h-full ${index >= 4 ? 'animate-fade-in' : ''}`}
+                                    className={`flex flex-col md:flex-row items-center md:items-start p-4 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl hover:border-primary/50 shadow-md hover:shadow-lg transition-all group text-center md:text-left h-full ${index >= 4 ? 'animate-fade-in' : ''}`}
                                 >
                                     <div className="flex-shrink-0 p-2 bg-gray-50 dark:bg-white/5 rounded-lg group-hover:scale-110 transition-transform w-12 h-12 flex items-center justify-center overflow-hidden mb-3 md:mb-0 md:mr-4">
                                         {link.isImage ? (

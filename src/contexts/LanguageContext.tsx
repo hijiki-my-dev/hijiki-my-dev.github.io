@@ -8,7 +8,7 @@ type Language = 'ja' | 'en';
 interface LanguageContextType {
     language: Language;
     toggleLanguage: () => void;
-    t: (key: string) => string;
+    t: <T = string>(key: string) => T;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -32,7 +32,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         setLanguage((prev) => (prev === 'ja' ? 'en' : 'ja'));
     };
 
-    const t = (key: string): string => {
+    const t = <T = string>(key: string): T => {
         const keys = key.split('.');
         let value: any = translations[language];
 
@@ -40,11 +40,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
             if (value && typeof value === 'object' && k in value) {
                 value = value[k as keyof typeof value];
             } else {
-                return key;
+                return key as unknown as T;
             }
         }
 
-        return typeof value === 'string' ? value : key;
+        return value as T;
     };
 
     return (
