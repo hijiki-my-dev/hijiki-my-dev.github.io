@@ -32,3 +32,6 @@ dist-ssr
 
 .eslintcache
 coverage
+
+# Personal Docs
+DEVELOPMENT.md

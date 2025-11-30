@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# ポートフォリオサイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このプロジェクトは、Google DeepMindのAIエージェント「Antigravity」とのペアプログラミングによって作成された個人のポートフォリオサイトです。
 
-Currently, two official plugins are available:
+## 概要
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+モダンなWeb技術を使用し、レスポンシブでインタラクティブなシングルページアプリケーションとして構築されています。
 
-## React Compiler
+## 技術スタック
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Framework**: React + Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (v4)
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages (via GitHub Actions)
 
-## Expanding the ESLint configuration
+## 主な機能
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎨 **モダンなUI/UX**: グラスモーフィズムやスムーズなアニメーションを採用
+- 🌓 **ダークモード対応**: システム設定または手動切り替えによるライト/ダークテーマ
+- 🌐 **多言語対応**: 日本語と英語の切り替え機能
+- 📱 **完全レスポンシブ**: モバイルからデスクトップまで最適化された表示
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Antigravityによる開発
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+このコードベースの大部分は、Antigravityによって生成・修正されました。
+- プロジェクトの初期セットアップ
+- コンポーネント設計と実装
+- Tailwind CSS v4の設定
+- GitHub Actionsによるデプロイパイプラインの構築
+- 多言語対応とテーマ切り替え機能の実装
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 開発の始め方
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# 依存関係のインストール
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 開発サーバーの起動
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# ビルド
+npm run build
 ```
