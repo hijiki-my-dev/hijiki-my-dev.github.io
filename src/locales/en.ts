@@ -51,7 +51,9 @@ export const en = {
   },
   profile: {
     title: 'Profile',
-    description: "Born in 2002, from Tokyo.\nI started getting interested in IT during high school, and participating in a long-term internship inspired me to aim for a career as a software engineer! I plan to start working as a SWE in 2027.\nI have mostly used Python, but I also want to master Web frontend development with JavaScript (TypeScript).\n\nI have been running a blog for light novel reviews since my freshman year of university. My favorite series are Sword Art Online (the title font is from SAO) and Rascal Does Not Dream (the image is from the series' real-life setting)!\n\nThis portfolio site was created by Antigravity. I strive to be someone who can effectively utilize AI.",
+    description_pre: "Born in 2002, from Tokyo.\nI started getting interested in IT during high school, and participating in a long-term internship inspired me to aim for a career as a software engineer! I plan to start working as a SWE in 2027.\nI have mostly used Python, but I also want to master Web frontend development with JavaScript (TypeScript).\n\nI have been running a blog for light novel reviews since my freshman year of university. My favorite series are Sword Art Online (",
+    description_link: "the title font is from SAO",
+    description_post: ") and Rascal Does Not Dream (the image is from the series' real-life setting)!\n\nThis portfolio site was created by Antigravity. I strive to be someone who can effectively utilize AI.",
     links: {
       x: 'Light novels, anime, and IT-related topics',
       blog: 'Light novel reviews and more',
