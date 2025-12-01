@@ -77,7 +77,17 @@ const CasualProfile = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-8 mb-12">
                         <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed whitespace-pre-line text-left flex-1">
-                            {t('profile.description')}
+                            {t('profile.description_pre')}
+                            <a
+                                href="https://fontmeme.com/jfont/sao-ui-font/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                {t('profile.description_link')}
+                                <ExternalLink size={16} className="inline ml-1" />
+                            </a>
+                            {t('profile.description_post')}
                         </p>
                         <div className="flex-shrink-0">
                             <img

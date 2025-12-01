@@ -9,7 +9,7 @@ const Hero = () => {
     useEffect(() => {
         const checkFont = async () => {
             try {
-                const response = await fetch('/fonts/sao_ui/SAOUI-Bold.otf', { method: 'HEAD' });
+                const response = await fetch('/fonts/sao_ui/sao_ui_bold.otf', { method: 'HEAD' });
                 if (response.ok) {
                     setIsFontAvailable(true);
                 }
