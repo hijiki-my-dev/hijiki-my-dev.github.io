@@ -35,6 +35,7 @@ export default {
         sans: ['Inter', 'sans-serif'],
         heading: ['Outfit', 'sans-serif'],
         script: ['Dancing Script', 'cursive'],
+        sao: ['SAOUI', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',

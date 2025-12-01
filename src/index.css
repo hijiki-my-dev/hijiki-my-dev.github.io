@@ -1,6 +1,46 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+@font-face {
+  font-family: 'SAOUI';
+  src: url('/fonts/sao_ui/SAOUI-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.sao-text {
+  font-family: 'SAOUI', sans-serif;
+  position: relative;
+  display: inline-block;
+  /* Gradient Text */
+  background: linear-gradient(to bottom, #E0F8FF 20%, #2CB4E0 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  /* Drop Shadow: 5px black shadow */
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.8));
+  
+  /* Ensure main text is above pseudo */
+  z-index: 10;
+}
+
+.sao-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  /* 2px stroke results in ~1px visible border since half is behind the main text */
+  -webkit-text-stroke: 2px rgba(42, 53, 56, 0.5);
+  /* Make the fill transparent so it doesn't interfere with the main text gradient */
+  color: transparent;
+}
+
+/* Optional: Add a subtle inner light stroke if needed, but the gradient usually handles it */
+
+
 @layer base {
   html {
     scroll-behavior: smooth;

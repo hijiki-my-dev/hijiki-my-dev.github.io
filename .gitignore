@@ -32,6 +32,7 @@ dist-ssr
 
 .eslintcache
 coverage
+public/fonts
 
 # Personal Docs
 DEVELOPMENT.md

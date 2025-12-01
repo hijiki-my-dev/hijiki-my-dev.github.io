@@ -1,18 +1,35 @@
 import { ArrowDown } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
     const { t } = useLanguage();
+    const [isFontAvailable, setIsFontAvailable] = useState(false);
+
+    useEffect(() => {
+        const checkFont = async () => {
+            try {
+                const response = await fetch('/fonts/sao_ui/SAOUI-Bold.otf', { method: 'HEAD' });
+                if (response.ok) {
+                    setIsFontAvailable(true);
+                }
+            } catch (error) {
+                console.log('SAO UI font not available, falling back to default.');
+            }
+        };
+        checkFont();
+    }, []);
 
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
-            {/* Background Elements */}
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000" />
-
             <div className="section-container text-center z-10">
                 <h1 className="text-5xl md:text-7xl font-bold mb-10 animate-fade-in text-gray-900 dark:text-white">
-                    <span className="inline-block pb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">{t('hero.name')}</span>
+                    <span
+                        className={`${isFontAvailable ? 'sao-text' : 'inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'} pb-2`}
+                        data-text={isFontAvailable ? t('hero.name') : undefined}
+                    >
+                        {t('hero.name')}
+                    </span>
                 </h1>
                 <p className="text-[20px] text-gray-600 dark:text-gray-400 mb-0 max-w-2xl mx-auto animate-slide-up opacity-0 whitespace-pre-wrap" style={{ animationDelay: '0.2s' }}>
                     {t('hero.description')}
